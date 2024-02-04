@@ -1,0 +1,122 @@
+/* Estilos generales del documento HTML */
+html {
+    box-sizing: border-box; /* El modelo de caja incluye el borde y el relleno en el tamaño total */
+    height: 100%; /* Establece la altura del documento al 100% de la ventana */
+}
+
+/* Configuración global para evitar márgenes y rellenos predeterminados en todos los elementos */
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /* Hereda el modelo de caja del elemento principal (html) */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    align-items: center; /* Centra los elementos en el eje transversal (vertical) */
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4); /* Fondo con degradado lineal */
+    display: flex; /* Usa el modelo de caja flexible para alinear y distribuir elementos */
+    font-family: 'Dosis', sans-serif; /* Tipo de fuente con respaldo de fuente sans-serif */
+    font-display: swap; /* Usa la estrategia de intercambio de fuente */
+    height: 100%; /* Ocupa el 100% de la altura de la ventana */
+    justify-content: center; /* Centra los elementos en el eje principal (horizontal) */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+/* Estilos del contenedor principal */
+.wrapper {
+    backdrop-filter: blur(5px); /* Aplica un desenfoque al fondo del contenedor */
+    -webkit-backdrop-filter: blur(5px); /* Para navegadores WebKit que admiten el filtro de fondo */
+    border-radius: 20px; /* Borde redondeado */
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1); /* Sombra suave */
+    color: #232323; /* Color del texto */
+    backdrop-filter: blur(4px); /* Otra capa de desenfoque */
+    -webit-backdrop-filter: blur(4px); /* Fallback para navegadores WebKit */
+    background: rgba(255, 255, 255, 0.30); /* Fondo semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.34); /* Borde semi-transparente */
+    flex-basis: 90%; /* Tamaño base flexible del contenedor */
+    max-width: 90%; /* Ancho máximo del contenedor */
+    height: auto; /* Altura automática según el contenido */
+    padding: 10% 5vw; /* Relleno en porcentajes y unidades de ventana */
+    text-align: center; /* Alineación del texto en el centro */
+}
+
+/* Estilos de la pantalla de la calculadora */
+.screen {
+    backdrop-filter: blur(5px); /* Desenfoque para la pantalla */
+    -webkit-backdrop-filter: blur(5px); /* Fallback para navegadores WebKit */
+    background: rgba(255, 255, 255, 0.75); /* Fondo semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.01); /* Borde semi-transparente */
+    border-radius: 16px; /* Borde redondeado */
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1); /* Sombra suave */
+    color: #232323; /* Color del texto */
+    font-size: 5vw; /* Tamaño del texto en porcentaje de la ventana */
+    overflow: auto; /* Desplazamiento si el contenido es demasiado grande */
+    padding: 2vw; /* Relleno en porcentaje de la ventana */
+    text-align: right; /* Alineación del texto a la derecha */
+    width: 80%; /* Ancho del 80% de la ventana */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Estilos de las filas de botones de la calculadora */
+.calc-button-row {
+    display: flex; /* Usa el modelo de caja flexible para las filas de botones */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    margin: 3vw 0; /* Margen superior e inferior en porcentaje de la ventana */
+}
+
+/* Estilos de los botones de la calculadora */
+.calc-button {
+    backdrop-filter: blur(5px); /* Desenfoque para los botones */
+    -webkit-backdrop-filter: blur(5px); /* Fallback para navegadores WebKit */
+    background: rgba(255, 255, 255, 0.75); /* Fondo semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.01); /* Borde semi-transparente */
+    border-radius: 16px; /* Borde redondeado */
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1); /* Sombra suave */
+    color: #232323; /* Color del texto */
+    flex-basis: 20%; /* Tamaño base flexible del botón */
+    font-family: inherit; /* Usa la fuente del elemento padre */
+    font-size: 4vw; /* Tamaño del texto en porcentaje de la ventana */
+    height: 10vw; /* Altura del botón en porcentaje de la ventana */
+}
+
+/* Estilos del último botón de la calculadora */
+.calc-button:last-child {
+    backdrop-filter: blur(5px); /* Desenfoque para el último botón */
+    -webkit-backdrop-filter: blur(5px); /* Fallback para navegadores WebKit */
+    background: rgba(255, 255, 255, 0.75); /* Fondo semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.01); /* Borde semi-transparente */
+    border-radius: 16px; /* Borde redondeado */
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1); /* Sombra suave */
+    color: #fff; /* Color del texto */
+    background: #d72880; /* Fondo de color rosa */
+    flex-basis: 20%; /* Tamaño base flexible del último botón */
+}
+
+/* Estilos al pasar el ratón sobre el último botón de la calculadora */
+.calc-button:last-child:hover {
+    background-color: inherit; /* Hereda el color de fondo al pasar el ratón */
+    color: inherit; /* Hereda el color del texto al pasar el ratón */
+}
+
+/* Estilos al pasar el ratón sobre los botones de la calculadora */
+.calc-button:hover {
+    background-color: inherit; /* Hereda el color de fondo al pasar el ratón */
+}
+
+/* Estilos al hacer clic en los botones de la calculadora */
+.calc-button:active {
+    background-color: #63c9b4; /* Color de fondo al hacer clic */
+}
+
+/* Estilos específicos para el botón con la clase 'double' */
+.double {
+    flex-basis: 47%; /* Tamaño base flexible del botón 'double' */
+}
+
+/* Estilos específicos para el botón con la clase 'triple' */
+.triple {
+    flex-basis: 73%; /* Tamaño base flexible del botón 'triple' */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo de estilos -->
+
+    <title>Calculadora.Js</title> <!-- Título de la página -->
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Contenedor principal -->
+        <section class="screen">
+            0 <!-- Pantalla de la calculadora, muestra los números -->
+        </section>
+
+        <section class="calc-buttons">
+            <!-- Sección de botones de la calculadora -->
+            <div class="calc-button-row">
+                <!-- Fila de botones -->
+                <button class="calc-button double">C</button>
+                <!-- Botón para borrar todo -->
+                <button class="calc-button">&larr;</button>
+                <!-- Botón de retroceso -->
+                <button class="calc-button"> &divide;</button>
+                <!-- Botón de división -->
+            </div>
+
+            <div class="calc-button-row">
+                <!-- Otras filas de botones con números y operadores -->
+                <button class="calc-button">7</button>
+                <button class="calc-button">8</button>
+                <button class="calc-button">9</button>
+                <button class="calc-button">&times;</button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button">4</button>
+                <button class="calc-button">5</button>
+                <button class="calc-button">6</button>
+                <button class="calc-button">&minus;</button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button">1</button>
+                <button class="calc-button">2</button>
+                <button class="calc-button">3</button>
+                <button class="calc-button">&plus;</button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button triple">0</button>
+                <!-- Botón triple de ancho -->
+                <button class="calc-button">&equals;</button>
+                <!-- Botón de igual -->
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script> <!-- Enlace al script de JavaScript -->
+</body>
+
+</html>
